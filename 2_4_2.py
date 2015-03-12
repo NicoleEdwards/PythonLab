@@ -50,12 +50,24 @@ planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "
 print planets
 
 
-primes = []
+integers = []
 for i in range(0,1000):
-    isPrime = True
-    for j in range(2,i):
-        if( i%j == 0 ):
-            isPrime = False
-    if( isPrime ):
-        primes.append(i)
-print primes
+    if (i%3 == 0) and (i%7 == 0):
+       integers.append(i)
+print integers
+
+integers = [ 0, 21, 42, 63, 84, 105, 126, 147, 168, 189, 210, 231, 252, 273, 294, 315, 336, 357, 378, 399, 420, 441, 462, 483, 504, 525, 546, 567, 588, 609, 630, 651, 672, 693, 714, 735, 756, 777, 798, 819, 840, 861, 882, 903, 924, 945, 966, 987]
+num_integers = len(integers)
+print num_integers
+
+# The following code makes a list of 10 random numbers between 0 and 10
+from random import random as rand
+x = []
+for i in range(10):
+    x.append( rand() * 10 )
+print x
+
+z = GreatestNumber
+for z in x:
+    if z > 
+print z
