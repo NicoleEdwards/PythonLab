@@ -67,7 +67,8 @@ for i in range(10):
     x.append( rand() * 10 )
 print x
 
-z = GreatestNumber
+greatest = 0
 for z in x:
-    if z > 
-print z
+    if z > greatest:
+        greatest = z
+print greatest
